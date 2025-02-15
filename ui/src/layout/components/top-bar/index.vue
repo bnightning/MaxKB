@@ -58,8 +58,8 @@
           class="cursor color-secondary mr-16 ml-8"
           style="font-size: 20px"
           @click="toUrl(user.themeInfo?.forumUrl)"
-        ></AppIcon> -->
-      </el-tooltip>
+        ></AppIcon>
+      </el-tooltip> -->
       <!-- <el-dropdown trigger="click" type="primary">
         <template #dropdown>
           <el-dropdown-menu>
