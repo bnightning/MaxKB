@@ -145,15 +145,16 @@ const submitValid = (formEl: FormInstance | undefined) => {
   if (user.isEnterprise()) {
     submitHandle(formEl)
   } else {
-    common
-      .asyncGetValid(ValidType.Application, ValidCount.Application, loading)
-      .then(async (res: any) => {
-        if (res?.data) {
-          submitHandle(formEl)
-        } else {
-          MsgAlert(t('common.tip'), t('views.application.tip.professionalMessage'))
-        }
-      })
+    // common
+    //   .asyncGetValid(ValidType.Application, ValidCount.Application, loading)
+    //   .then(async (res: any) => {
+    //     if (res?.data) {
+    //       submitHandle(formEl)
+    //     } else {
+    //       MsgAlert(t('common.tip'), t('views.application.tip.professionalMessage'))
+    //     }
+    //   })
+    submitHandle(formEl)
   }
 }
 const submitHandle = async (formEl: FormInstance | undefined) => {
